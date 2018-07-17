@@ -26,6 +26,12 @@ app.get("/main", function(req, res){
     res.sendFile(__dirname+"/public/main.html")
 })
 
+app.post("/ajax_send_email", function(req, res){
+    console.log(req.body.email);
+    var responseData = {"result" : "ok", "email" : req.body.email}
+    res.json(responseData);
+})
+
 app.post("/email_post", function(req, res){
     console.log(req.body.email);
     res.send("<h1>welcome! " + req.body.email + "님</h1>")
