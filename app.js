@@ -27,5 +27,6 @@ app.get("/main", function(req, res){
 })
 
 app.post("/email_post", function(req, res){
-    res.sendFile("post response")
+    console.log(req.body.email);
+    res.send("<h1>welcome! " + req.body.email + "님</h1>")
 })
