@@ -1,0 +1,22 @@
+{
+  "name": "nodesever",
+  "version": "1.0.0",
+  "description": "nodesever test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackonblack/learn_node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackonblack/learn_node.js/issues"
+  },
+  "homepage": "https://github.com/blackonblack/learn_node.js#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
