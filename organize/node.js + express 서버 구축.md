@@ -37,13 +37,15 @@ cmd : `node app.js`
 >
 >   The `app` object conventionally denotes the Express application. Create it by calling  `express()` function 
 >
-> * **app.listen(path,[callback])**
+> * **app.listen([port[,host[,backlog]]]\[,callback])**
+>
+>   ex)`app.listen(3000);`
+>
+>   **app.listen(path,[callback])**
 >
 >   ex) `app.listen('/tmp/sock');`
 >
->   **app.listen([port[,host[,backlog]]]\[,callback])**
->
->   ex)`app.listen(3000);`
+>   
 
 
 
@@ -75,6 +77,10 @@ static 파일 등록
  app.use(express.static('public'))
 ```
 
-> **app.use([path,] callback [, callback...])**
+> * **app.use([path,] callback [, callback...])**
 >
 > Mounts the specified middleware function or functions at the specified path: the middleware function is executed when the base of the requested path matches `path` 
+>
+> * **express.static(root, [options])**
+>
+>   This is a built-in middleware function in Express. It serves static files and is based on serve-static. 
